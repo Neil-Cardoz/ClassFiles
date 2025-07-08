@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addnumbers(){
+            number1 = document.getElementById("number1");
+            number2 = document.getElementById("number2");
+            n1 = number1.value;
+            n2 = number2.value;
+           
+            document.writeln("The number1 is :");
+            document.writeln(n1 );
+            
+            document.writeln("The number2 is :");
+            document.writeln(n2);
+            document.writeln("Their sum is :");
+            document.writeln(parseFloat(n1)+parseFloat(n2));
+
+            m = document.getElementById("manan");
+            if (m=="yes"){
+                 output.innerHTML += `<pre>
+                                    ,.ood888888888888boo.,
+                               .od888P^""            ""^Y888bo.
+                           .od8P''   ..oood88888888booo.    Y8bo.
+                        .odP'"  .ood8888888888888888888888boo.  "Ybo.
+                      .d8'   od8'd888888888f8888't888888888b8bo   Yb.
+                     d8'  od8^   8888888888[  '  ]8888888888   ^8bo  8b
+                   .8P  d88'     8888888888P      Y8888888888     88b  Y8.
+                  d8' .d8'       Y88888888'      88888888P'       8b. 8b
+                 .8P .88P            """"            """"            Y88. Y8.
+                 88  888                                              888  88
+                 88  888                                              888  88
+                 88  888.        ..                        ..        .888  88
+                 8b 88b,     d8888b.od8bo.      .od8bo.d8888b     ,d88' d8'
+                  Y8. Y88.    8888888888888b    d8888888888888    .88P' .8P
+                   8b  Y88b.  88888888888888  88888888888888'  .d88P  d8'
+                     Y8.  ^Y88bod8888888888888..8888888888888bod88P^  .8P
+                      Y8.   ^Y888888888888888LS888888888888888P^   .8P'
+                        ^Yb.,  ^^Y8888888888888888888888P^^'  ,.dP^'
+                           ^Y8b..   ^^^Y88888888P^^^'    ..d8P^'
+                               ^Y888bo.,            ,.od888P^'
+                                    "^^Y888888888888P^^'"        </pre>`;
+
+                                    
+            }else {
+               output.innerHTML +=  `</pre>
+                                            __
+                      _   ,/-..
+                     (_),/'   /\\                      ,    *
+                    |),/'\     {{                   .+'  * *
+                  |),/'\~.-._                     .+',|*  *
+                  ,/'   |(HD)-._  _     ,-.._  .+',','
+                ,/'     ._______)/ ..'_____+',','
+              ,/'        |(#,-.#)b--...',---..','
+        ___ ,/'          |_\-'/_,'(@)/,._--.".
+      ,',-,/'.           (_).-'' .|-|/ / ,. \ |
+      || CD ||            \G-.._.'|_|~~~~~~' / /
+      \.__.'/             ---------' .---',"
+-----------'-------------------------------'--)
+</pre>`
+                
+                
+                
+                
+
+            }
+            
+            
+            
+        }
+    </script>
+
+    <form method="post">
+        <br><label for="number1">First Number</label><br>
+        <input type="number" id="number1" name="number1">
+        <br><label for="number2">Second Number</label><br>
+        <input type="number" id="number2" name="number2"><br>
+        <br><label for="manan">Is manan gay?</label><br><br>
+        <input type="radio" id="manan" name="manan">yes
+        <input type="radio"id="manan" name="manan">no <br>
+
+        <p><button onclick="addnumbers()">Submit</button></p>
+    
+    </form>
+    
+</body>
+</html>
